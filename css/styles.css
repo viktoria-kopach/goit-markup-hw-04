@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Стилі для обнулення відступів у елементів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Властивості для коректного відображення картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Властивості для обнулення курсиву address */
+address {
+    font-style: normal;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #434455;
+    background-color: #FFFFFF;
+    letter-spacing: 0.02em;
+}
+
+
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container main {
+    flex-grow: 1;
+}
+
+.logotipe {
+    font-family: Raleway, sans-serif;
+    color: #4D5AE5;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    margin: 90px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2E2F42;
+}
+
+.header-logo {
+    margin-right: 76px;
+}
+
+.header-logo-span {
+    color: #2e2f42;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    margin-right: 332px;
+    /* тут можливо помилка і потрібен спасе бетвін */
+}
+
+
+.header-menu-link {
+    display: flex;
+    padding: 24px 0;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: #404bbf;
+}
+
+/* Адреса хедера */
+
+
+.header-contacts-list {
+    display: flex;
+    font-style: normal;
+    gap: 40px;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: #404bbf;
+}
+
+/* Верхнє синє вікно */
+
+.hero-section {
+    letter-spacing: 0.02em;
+    background-color: #2e2f42;
+    color: #ffffff;
+    line-height: 1.07;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.hero-title {
+    max-width: 496px;
+    text-align: center;
+    margin: 0 auto 48px;
+}
+
+
+.hero-button {
+    min-width: 169px;
+    color: #fff;
+    background-color: #4d5ae5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    
+    border: none;
+    padding: 16px 32px;
+}
+
+button:hover,
+button:focus {
+    background-color: #404bbf;
+}
+
+/* Переваги */
+
+
+.advantages-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    /* запитати */
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantage-item-title {
+    margin-bottom: 8px;
+    max-width: 500;
+    letter-spacing: 0, 02em;
+}
+
+.advantage-list-item {
+    display: block;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.advantage-item-text {
+    letter-spacing: 0.02em;
+}
+
+/* Наша команда */
+
+.ourteam {
+    background: #f4f4fd;
+}
+
+.ourteam-title {
+    margin-bottom: 72px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.ourteam-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.ourteam-item {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.ourteam-item-discription {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.ourteam-item-title {
+    margin: 8px;
+    font-weight: 500;
+    line-break: 0.02em;
+    letter-spacing: 0.02em;
+}
+
+.ourteam-item-text {
+    letter-spacing: 0.02em;
+}
+
+/* Портфоліо команди */
+
+
+.ourportfolio-title {
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.ourportfolio-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.ourportfolio-list-discription {
+    padding: 32px 16px;
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+}
+
+.ourportfolio-item-title {
+    margin-bottom: 8px;
+}
+
+.ourportfolio-item-text {
+    letter-spacing: 0.02em;
+}
+
+/* Нижня частина сайту */
+
+.footer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #2e2f42;
+    color: #4d5ae5;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+}
+
+.footer-logo {
+    margin-bottom: 16px;
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-logo-span {
+    margin-bottom: 16px;
+    color: #f4f4fd;
+}
+
+.footer-text {
+    max-width: 264px;
+    color: #f4f4fd;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
